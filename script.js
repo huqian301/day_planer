@@ -21,7 +21,7 @@ $(document).ready(function () {
 
 
 
-    const hours = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23];
+    let hours = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23];
 
 
     function renderTable() {
@@ -48,14 +48,14 @@ $(document).ready(function () {
 
     }
     renderTable();
-    
 
-    
+
+
     let timeKey = {
         '0': '', '1': '', '2': '', '3': '', '4': '', '5': '', '6': '', '7': '', '8': '', '9': '', '10': '', '11': '', '12': '', '13': '', '14': '', '15': '', '16': '', '17': '', '18': '', '19': '', '20': '', '21': '', '22': '', '23': '',
     }
     function init() {
-        
+
 
         let storedPlan = JSON.parse(localStorage.getItem('textAreaInput'));
 
@@ -73,7 +73,7 @@ $(document).ready(function () {
 
     }
     init();
-   
+
 
     function plan() {
         localStorage.setItem('textAreaInput', JSON.stringify(timeKey));
@@ -88,7 +88,7 @@ $(document).ready(function () {
 
         timeKey[timeValue] = textAreaInput;
 
- 
+
         plan();
     })
 
