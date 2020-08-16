@@ -16,7 +16,7 @@ In this project, I create a simple calendar application that allows the user to 
 
 
 ## Output
-<img src= "https://media.giphy.com/media/YqbKnMxch4TByShduh/giphy.gif">
+<img src= "./img/day-planer.gif">
 
 
 ## User Story
